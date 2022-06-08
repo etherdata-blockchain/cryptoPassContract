@@ -5,10 +5,9 @@ async function main() {
 
   // We get the contract to deploy
   const contract = await ethers.getContractFactory("CryptoPass");
+  console.log("Deploying CryptoPass...");
   const file = await contract.deploy();
-
   await file.deployed();
-
   console.log("CryptoPass deployed to:", file.address);
 }
 

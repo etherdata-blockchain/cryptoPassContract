@@ -25,7 +25,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 const config: HardhatUserConfig = {
   solidity: "0.8.9",
   networks: {
-    testnet: {
+    etherdata: {
       url: process.env.RPC_URL || "",
       accounts: process.env.PK !== undefined ? [process.env.PK] : [],
     },

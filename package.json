@@ -37,6 +37,7 @@
   },
   "scripts": {
     "build": "hardhat compile",
-    "test": "hardhat test"
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.ts --network etherdata"
   }
 }
